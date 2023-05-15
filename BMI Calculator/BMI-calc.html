@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="BMI-calc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    <main class="container">
+      
+      <section class="choice">
+        <div class="top-row">
+          What unit would you like to choose?
+        </div>
+        <div class="button-options">
+          <button class="js-english">English</button>
+          <button class="js-metric">Metric</button>
+        </div>
+      </section>
+
+      <section class="english-calc hidden js-english-calc">
+        <input type="text" class="english-height js-english-height" placeholder="Height (Inches)">
+        <input type="text" class="english-weight js-english-weight" placeholder="Weight (Pounds)">
+        <button class="calculate-button js-calculate-english-button">Calculate</button>
+        <p class="js-output-BMI-english output"></p>
+        <p class="js-english-output-scale output-scale"></p>
+      </section>
+
+      <section class="metric-calc hidden js-metric-calc">
+        <input type="text" class="metric-height js-metric-height" placeholder="Height (Meters)">
+        <input type="text" class="metric-weight js-metric-weight" placeholder="Weight (Kilograms)">
+        <button class="calculate-button js-calculate-metric-button">Calculate</button>
+        <p class="js-output-BMI-metric output"></p>
+        <p class="js-metric-output-scale output-scale"></p>
+      </section>
+
+    </main>
+
+    <script src="BMI-calc.js"></script>
+
+  </body>
+
+</html>
