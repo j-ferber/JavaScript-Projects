@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Orbitron;
+  font-weight: 600;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.clock-screen {
+  background: url(images/woodpattern.jpg);
+  color: rgba(255, 255, 255, .55);
+  width: 800px;
+  height: 400px;
+  border-radius: 75px;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  font-size: 120px;
+  margin-left: 175px;
+}
+
+.meridiem {
+  font-size: 35px;
+  margin-left: 45px;
+}
+
+@media (max-width: 800px){
+  .clock-screen {
+    width: 400px;
+  }
+  .time {
+    font-size: 60px;
+    margin-left: 50px;
+  }
+  .meridiem {
+    font-size: 17px;
+    margin-left: 25px;
+  }
+}
