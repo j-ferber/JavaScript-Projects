@@ -35,7 +35,7 @@ const createList = () => {
   tasksArray.forEach((index, indexa) => {
     let newDiv = document.createElement('div');
     newDiv.classList.add('add-task-row-2');
-    newDiv.innerHTML = `${index} <div class="task-icon-container"><div class="icon-container margin-right js-icon-container-complete-${indexa}"><i class="fa-circle-check fa-regular js-complete"></i></div><div class="icon-container js-icon-container-xmark-${indexa}"><i class="fa-xmark fa-solid js-remove"></i></div></div>`;
+    newDiv.innerHTML = `<div class="wrap-text">${index}</div><div class="task-icon-container"><div class="icon-container margin-right js-icon-container-complete-${indexa}"><i class="fa-circle-check fa-regular js-complete"></i></div><div class="icon-container js-icon-container-xmark-${indexa}"><i class="fa-xmark fa-solid js-remove"></i></div></div>`;
     taskList.append(newDiv);
   });
   const removeButtons = document.querySelectorAll('.js-remove');
