@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 75vh;
+  background-color: rgb(111, 78, 55);
+  font-family: open sans;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+i {
+  cursor: pointer;
+  transition: color .2s;
+}
+
+i:hover {
+  color: white;
+}
+
+.container {
+  margin-top: 120px;
+  background-color: rgb(208, 187, 148);
+  border-radius: 15px;
+  padding: 20px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, .65);
+  margin-bottom: 30px;
+}
+
+.task-list {
+  width: 100%;
+}
+
+.add-task-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+}
+
+.add-task-row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.task-name {
+  height: 24px;
+  width: 40%;
+  font-size: 18px;
+  border-radius: 15px;
+  border: 0;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, .65);
+  padding: 5px 10px;
+}
+
+.icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .2s;
+}
+
+.background-brown {
+  background-color: rgb(103, 71, 43)
+}
+
+.animal {
+  height: 400px;
+  width: 400px;
+  position: fixed;
+  object-fit: contain;
+  transform: rotate(330deg);
+  left: 0;
+  top: 0;
+}
+
+.animal2 {
+  height: 300px;
+  width: 300px;
+  position: fixed;
+  object-fit: contain;
+  transform: rotate(15deg);
+  border-radius: 150px;
+  right: 0;
+  top: 50%;
+  margin-top: -150px;
+  margin-right: 50px;
+}
+
+.comp-container {
+  margin: 0;
+}
+
+.task-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.completed-tasks {
+  width: 100%;
+  font-size: 18px;
+}
+
+.completed-task-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.margin-right {
+  margin-right: 5px;
+}
+
+.coffee-img {
+  position: fixed;
+  bottom: 75px;
+  left: 125px;
+  font-size: 200px;
+  cursor:auto;
+  color: white;
+}
+
+.trash-icon-container {
+  display: none;
+}
+

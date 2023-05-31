@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="todo2.css">
+    <script src="https://kit.fontawesome.com/462db5ea42.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mediaqs.css">
+  </head>
+  <body>
+    
+    <section class="container">
+      <h1 class="header">To-Do:</h1>
+      <div class="task-list js-task-list"></div>
+      <div class="add-task-row">
+        <input type="text" class="task-name js-task-name" placeholder="Enter task">
+        <div class="icon-container js-icon-container">
+          <i class="fa-check fa-solid js-check"></i>
+        </div>
+      </div>
+    </section>
+    <section class="container comp-container">
+      <h1 class="header">Completed Tasks:</h1>
+      <div class="completed-tasks js-completed-tasks"></div>
+      <div class="icon-container js-icon-container trash-icon-container js-trash-icon-container">
+          <i class="fa-solid fa-trash js-trash trash"></i>
+      </div>
+    </section>
+    <img src="images/animal.png" class="animal">
+    <img src="images/animal2.gif" class="animal2">
+    <i class="fa-solid coffee-img fa-mug-hot"></i>
+
+    <script src="todo2.js"></script>
+
+  </body>
+
+</html>
