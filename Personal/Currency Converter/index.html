@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="top">
+        <h1 class="title">Currency Converter</h1>
+      </div>
+      <div class="currency-container">
+        <div class="input-row">
+          <div class="inputs">
+            <input type="number" class="amount js-amount">
+            <select class="input-content js-input-content">
+              <option value="USD">USD</option>
+            </select>
+          </div>
+          <i class='bx bx-right-arrow-alt'></i>
+          <div class="right-side">
+            <select class="translate-content js-convert-content">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="JPY">JPY</option>
+              <option value="GBP">GBP</option>
+              <option value="AUD">AUD</option>
+              <option value="CAD">CAD</option>
+              <option value="CHF">CHF</option>
+              <option value="CNY">CNY</option>
+              <option value="NZD">NZD</option>
+              <option value="HKD">HKD</option>
+            </select>
+            <button class="convert-button js-convert-button">Convert</button>
+          </div>
+        </div>
+        <div class="output">
+          <div class="output-base">
+            <span class="user-input js-user-input">-----</span>
+            <span class="base-currency js-original-currency">USD</span>
+          </div>
+          <span class="equals">=</span>
+          <div class="new-output">
+            <span class="user-input js-calculated-output">-----</span>
+            <span class="base-currency js-output-currency">USD</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+
+    <script src="index.js"></script>
+
+  </body>
+
+</html>
